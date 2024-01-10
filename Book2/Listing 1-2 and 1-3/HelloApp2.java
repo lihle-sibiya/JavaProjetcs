@@ -3,6 +3,7 @@
 // Greeter class and then calling the Greeter
 // object's sayHello method.
 
+//Listing 1-2
 public class HelloApp2	
 {
     public static void main(String[] args)	
