@@ -1,6 +1,6 @@
 public class ScopeApp
 {		
-    static int x;
+    static int x; //class variable
     public static void main(String[] args)
     {
         x = 5;
@@ -9,9 +9,9 @@ public class ScopeApp
     }
     public static void myMethod()
     {
-        int y;
-        y = 10;	
-        if (y == x + 5)	
+        int y; //local variable
+        y = 10;	 //initialized
+        if (y == x + 5)	//if statement
         {
             int z;
             z = 15;	
