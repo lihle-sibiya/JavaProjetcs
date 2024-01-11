@@ -8,14 +8,14 @@ public class DiceApp
         for (int i=0; i<100; i++)	
         {
             roll = randomInt(1, 6);	
-            System.out.print(roll + " ");	
+            System.out.print(roll + " ");	//print method: random numbers printed on same  line
         }
         System.out.println();
     }
     public static int randomInt(int low, int high)	
     {
-        int result = (int)(Math.random()	
-            * (high - low + 1)) + low;
+        int result = (int)(Math.random()	//converts the random double value to an integer
+            * (high - low + 1)) + low; //between low and high.
         return result;	
     }
 

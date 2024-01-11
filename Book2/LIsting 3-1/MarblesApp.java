@@ -4,7 +4,7 @@ public class MarblesApp
     static Scanner sc = new Scanner(System.in);	
     public static void main(String[] args)
     {
-        // declarations	
+        // declarations	: local variables
         int numberOfMarbles;
         int numberOfChildren;
         int marblesPerChild;
@@ -19,7 +19,7 @@ public class MarblesApp
 
         // calculate the results
         marblesPerChild = numberOfMarbles / numberOfChildren;	
-        marblesLeftOver = numberOfMarbles % numberOfChildren;	
+        marblesLeftOver = numberOfMarbles % numberOfChildren;	//Calculates the number of marbles left over
 
         // print the results	
         System.out.println("Give each child " +
