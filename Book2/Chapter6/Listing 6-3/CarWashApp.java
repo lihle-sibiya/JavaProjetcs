@@ -34,7 +34,7 @@ public class CarWashApp
         details += "\tWash, vacuum, and hand dry.\n";
         break;
       default:
-        details = "That’s not one of the codes.";
+        details = "Thatï¿½s not one of the codes.";
         break;
     }
     System.out.println("\nThat package includes:\n");
