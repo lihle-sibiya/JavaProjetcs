@@ -11,7 +11,7 @@ public class GuessingGame
             boolean validInput;	
             int number, guess;
             String answer;
-            // Pick a random number
+            // Pick a random number between 1 and 10
             number = (int)(Math.random() * 10) + 1;	
             // Get the guess
             System.out.println("\nI'm thinking of a number "
@@ -31,9 +31,9 @@ public class GuessingGame
             } while (!validInput);	
             // Check the guess
             if (guess == number)	
-                System.out.println("You’re right!");
+                System.out.println("Youï¿½re right!");
             else
-                System.out.println("You’re wrong! " +
+                System.out.println("Youï¿½re wrong! " +
                     "The number was " + number);
             // Play again?
             do	
