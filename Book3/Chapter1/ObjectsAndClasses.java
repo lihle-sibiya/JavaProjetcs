@@ -4,6 +4,6 @@ public class ObjectsAndClasses {
     public static void main(String[] args) {
         
         //Objects
-        Invoice i = new Invoice();
+       // Invoice i = new Invoice();
     }
 }
