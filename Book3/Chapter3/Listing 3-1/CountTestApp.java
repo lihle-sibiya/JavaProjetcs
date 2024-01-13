@@ -17,6 +17,7 @@ public class CountTestApp
             + " instances of the CountTest class.");
     }
 }
+
 class CountTest
 {
     private static int instanceCount = 0;
@@ -25,7 +26,6 @@ class CountTest
     {
         instanceCount++;
     }
-
     public static int getInstanceCount()
     {
         return instanceCount;
