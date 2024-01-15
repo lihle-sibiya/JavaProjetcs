@@ -9,8 +9,10 @@ public class CloneTest2
           "1300 N. First Street",
           "Fresno", "CA", "93702");
       Employee emp2 = (Employee)emp1.clone();	
+      
       System.out.println(	
           "**** after cloning ****\n");
+
       printEmployee(emp1);
       printEmployee(emp2);
       emp2.setLastName("Smith");	
@@ -19,9 +21,12 @@ public class CloneTest2
           "Fresno", "CA", "93722");
       System.out.println(	
           "**** after changing emp2 ****\n");
+
       printEmployee(emp1);
       printEmployee(emp2);
    }
+
+
    private static void printEmployee(Employee e)	
    {
       System.out.println(e.getFirstName()
@@ -31,42 +36,51 @@ public class CloneTest2
       System.out.println();
    }
 }
+
 class Employee implements Cloneable	
 {
    private String lastName;
    private String firstName;
    private Double salary;
    public Address address;	
+
    public Employee(String lastName, String firstName)
    {
       this.lastName = lastName;
       this.firstName = firstName;
       this.address = new Address();
    }
+
    public String getLastName()
    {
       return this.lastName;
    }
+
    public void setLastName(String lastName)
    {
       this.lastName = lastName;
    }
+
    public String getFirstName()
    {
       return this.firstName;
    }
+
    public void setFirstName(String firstName)
    {
       this.firstName = firstName;
    }
+
    public Double getSalary()
    {
       return this.salary;
    }
+
    public void setSalary(Double salary)
    {
       this.salary = salary;
    }
+
    public Object clone()	
    {
       Employee emp;
@@ -81,6 +95,7 @@ class Employee implements Cloneable
       }
       return emp;	
    }
+
    public String toString()
    {
       return this.getClass().getName() + "["
@@ -89,6 +104,7 @@ class Employee implements Cloneable
           + this.salary + "]";
    }
 }
+
 class Address implements Cloneable	
 {
    private String street;
@@ -102,6 +118,7 @@ class Address implements Cloneable
       this.state = "";
       this.zipCode = "";
    }
+
    public Address(String street, String city,
                  String state, String zipCode)
    {
@@ -110,6 +127,8 @@ class Address implements Cloneable
       this.state = state;
       this.zipCode = zipCode;
    }
+
+   
    public Object clone()	
    {
       try

@@ -63,6 +63,7 @@ class Employee
         return emp;	//Returns the cloned Employee object.
     }
 
+    @Override
     public String toString()
     {
         return this.getClass().getName() + "["
