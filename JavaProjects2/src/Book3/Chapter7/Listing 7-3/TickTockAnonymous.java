@@ -4,22 +4,24 @@ public class TickTockAnonymous
 {
    private String tickMessage = "Tick . . .";
    private String tockMessage = "Tock . . .";
+
+
    public static void main(String[] args)	
-   {
-      TickTockAnonymous t = new TickTockAnonymous();
+   { //Anonymous classes won’t work in a static context so create ...
+      TickTockAnonymous t = new TickTockAnonymous(); //instance of the TickTockAnonymous class
       t.go();
    }
 
-   private void go()
+   private void go() //this method can freely access fields defined in outer class
    {
       // create a timer that calls the Ticker class
       // at one second intervals
-      Timer t = new Timer(1000,	
+      Timer t = new Timer(1000,	//object that implements the ActionListener interface
          new ActionListener()	
-         {	
+         {	//anonymous class begins
              private boolean tick = true;
 
-             public void actionPerformed(	
+             public void actionPerformed(//actionPerformed method is called every 1,000 milliseconds by timer
                  ActionEvent event)
              {
                  if (tick)

@@ -2,14 +2,16 @@ import java.awt.event.*;
 import javax.swing.*;
 
 public class TickTockInner
-{
+{               //Fields of the outer class
    private String tickMessage = "Tick...";	
-   private String tockMessage = "Tock…";	
+   private String tockMessage = "Tockï¿½";
+
    public static void main(String[] args)
    {
        TickTockInner t = new TickTockInner();	
        t.go();	
    }
+
    private void go()	
    {
        // create a timer that calls the Ticker class
@@ -23,8 +25,8 @@ public class TickTockInner
            "Click OK to exit program");
        System.exit(0);	
    }
-
-   class Ticker implements ActionListener	
+       //Inner class Ticker
+   class Ticker implements ActionListener	//this class implements the ActionListener interface
    {
        private boolean tick = true;
 

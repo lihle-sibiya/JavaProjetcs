@@ -3,8 +3,8 @@ import javax.swing.*;
 
 public class TickTockStatic
 {
-    private static String tickMessage = "Tick . . .";
-    private static String tockMessage = "Tock . . .";
+    private static String tickMessage = "Tick . . ."; //tickMessage field is declared as static.
+    private static String tockMessage = "Tock . . .";// static so that a static class can access it
     public static void main(String[] args)
     {
         TickTockStatic t = new TickTockStatic();
@@ -12,7 +12,7 @@ public class TickTockStatic
     }
     private void go()
     {
-        // create a timer that calls the Ticker cla
+        // create a timer that calls the Ticker class
         // at one second intervals
         Timer t = new Timer(1000, new Ticker());
         t.start();
@@ -24,7 +24,9 @@ public class TickTockStatic
         System.exit(0);
     }
 
-    static class Ticker implements ActionListener
+
+  //static inner class can’t access any nonstatic fields or methods in outer class
+    static class Ticker implements ActionListener //Ticker class is declared as static.
     {
         private boolean tick = true;
 
