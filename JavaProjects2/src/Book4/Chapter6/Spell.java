@@ -20,15 +20,28 @@ public class Spell {
         spells.add(new Spell("Locomotor Mortis", Spell.SpellType.CURSE,
                 "Locks an opponent's legs."));
 
-        //list the name of each spell on the console
+        // list the name of each spell on the console
         for (Spell spell : spells)
-        System.out.println(spell.name);
+            System.out.println(spell.name);
 
-        System.out.println("xxxxxxxxxxxxxxxxxx");
+        System.out.println("xxxxxxxxxxxxxxxxxx    Method 2 - stresms  xxxxxxxx");
 
-        //equivalent code using the streams method: to convert ArrayList to a stream
-        spells.stream().forEach(s -> System.out.println(s));//Loop through the spells and print each stream using Lambda
+        // equivalent code using the streams method: to convert ArrayList to a stream
+        spells.stream().forEach(s -> System.out.println(s));// Loop through the spells and print each stream using
+                                                            // Lambda
 
+        System.out.println("xxxxxxxxxxxxxxxxxx    Print just spells normal way xxxxxxxx");
+        // Print just spells
+        for (Spell spell : spells) {
+            if (spell.type == Spell.SpellType.SPELL)
+                System.out.println(spell.name);
+        }
+
+        System.out.println("xxxxxxxxxxxxxxxxxx    Print just spells using streams  xxxxxxxx");
+        // Print just spells using streams filter method
+        spells.stream()
+                .filter(s -> s.type == Spell.SpellType.SPELL)
+                .forEach(s -> System.out.println(s));
     }
 
     public String name;
