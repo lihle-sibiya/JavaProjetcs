@@ -16,7 +16,7 @@ public class GenStack<E>	//formal type parameter <E>
 
     public E peek()	//returns a value of type E
     {
-        return list.peek(); // returns result of the linked list’s peek method
+        return list.peek(); // peeks at teh top of the item. Returns reults of the top without removing it
     }
 
     public boolean hasItems()	
@@ -26,6 +26,6 @@ public class GenStack<E>	//formal type parameter <E>
 
     public int size()	
     {
-        return list.size(); // returns the result of the linked list’s size method
+        return list.size(); // returns value 
     }
 }

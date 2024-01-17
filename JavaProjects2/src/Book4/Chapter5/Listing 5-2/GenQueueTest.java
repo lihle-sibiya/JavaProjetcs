@@ -20,7 +20,7 @@ public class GenQueueTest { //Generic que: capable of holding objects of any spe
        empList.addItems(hList);
        //While loop is used to print the employees that are now in the empList que
         while (empList.hasItems()) {
-            Employee emp = empList.dequeue();//retrieves the first item from the queue.
+            Employee emp = empList.dequeue();//etrieves the first itemr from the queue.
             System.out.println(emp.firstName
                     + " " + emp.lastName);
         }
