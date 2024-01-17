@@ -24,6 +24,11 @@ public class Spell {
         for (Spell spell : spells)
         System.out.println(spell.name);
 
+        System.out.println("xxxxxxxxxxxxxxxxxx");
+
+        //equivalent code using the streams method: to convert ArrayList to a stream
+        spells.stream().forEach(s -> System.out.println(s));//Loop through the spells and print each stream using Lambda
+
     }
 
     public String name;
