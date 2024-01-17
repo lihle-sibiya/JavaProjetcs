@@ -7,6 +7,7 @@ class CopyDemo
         int arrayOriginal[] = {42, 55, 21};
         int arrayNew[] = 
             Arrays.copyOf(arrayOriginal, 3);	
+         printIntArray(arrayOriginal);
         printIntArray(arrayNew);
     }
     static void printIntArray(int arrayNew[])

@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class GenStack<E>	
+public class GenStack<E>	//formal type parameter <E>
 {
     private LinkedList<E> list = new LinkedList<E>();	
 
