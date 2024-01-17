@@ -14,7 +14,7 @@ public class BoboAndTheLockers
          System.out.println("Bobo is changing every "
              + skip + " lockers.");
          for (int locker = skip; locker < 1000;	
-                 locker += skip)
+                 locker += skip)//adds the skip variable to the index variable so Bobo can access every nth locker
              lockers[locker] = !lockers[locker];	
       }
       System.out.println("Bobo is bored" 
