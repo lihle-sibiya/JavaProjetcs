@@ -3,13 +3,13 @@ public class BoboAndTheLockers
    public static void main(String[] args)
    {
       // true = open; false = closed
-      boolean[] lockers = new boolean[1001]; 	
+      boolean[] lockers = new boolean[1001]; //array of booleans with 1,001 elements	
       
      // close all the lockers
      for (int i = 1; i <= 1000; i++) 	
          lockers[i] = false;
       
-         for (int skip = 1; skip <= 1000; skip++)	
+         for (int skip = 1; skip <= 1000; skip++)	//Skip = how many lockers Bobo skips on each trip
       {
          System.out.println("Bobo is changing every "
              + skip + " lockers.");
