@@ -2,7 +2,7 @@ import java.util.*;
 
 public class GenQueue<E>	
 {
-    private LinkedList<E> list = new LinkedList<E>();	
+    private LinkedList<E> list = new LinkedList<E>();	//private LinkedList object list to keep its items
 
     public void enqueue(E item)	
     {
