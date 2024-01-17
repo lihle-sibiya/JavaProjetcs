@@ -1,4 +1,4 @@
-public class GenQueueTest {
+public class GenQueueTest { //Generic que: capable of holding objects of any specified type
     public static void main(String[] args) {
 
         GenQueue<Employee> empList; //GenQueue object that can hold Employee objects
