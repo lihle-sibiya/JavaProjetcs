@@ -15,7 +15,7 @@ public class BoboAndTheLockers
              + skip + " lockers.");
          for (int locker = skip; locker < 1000;	
                  locker += skip)//adds the skip variable to the index variable so Bobo can access every nth locker
-             lockers[locker] = !lockers[locker];	
+             lockers[locker] = !lockers[locker];	//(!) to reverse locker setting. If locker is open (true), it’s set to closed (false
       }
       System.out.println("Bobo is bored" 
          + " now so he's going home.");
