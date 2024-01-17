@@ -8,14 +8,13 @@ public class Strings {
 String msg = "Number of employees: " + empCount;
 System.out.println(msg);
 System.out.println("xxxxxxx");
+
 //Length
 String s = "A wonderful day for a neighbor.";
 int len = s.length();
         System.out.println(len);
         System.out.println("xxxxxxxxx");
-
-
-
+        
 //Split
 String address = "1500 N. Third Street:Fresno:CA:93722";
 String[] parts = address.split(":");
