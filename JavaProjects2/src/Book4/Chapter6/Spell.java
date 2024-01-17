@@ -24,7 +24,7 @@ public class Spell {
         for (Spell spell : spells)
             System.out.println(spell.name);
 
-        System.out.println("xxxxxxxxxxxxxxxxxx    Method 2 - stresms  xxxxxxxx");
+        System.out.println("xxxxxxxxxxxxxxxxxx    Method 2 - streams  xxxxxxxx");
 
         // equivalent code using the streams method: to convert ArrayList to a stream
         spells.stream().forEach(s -> System.out.println(s));// Loop through the spells and print each stream using
@@ -37,10 +37,16 @@ public class Spell {
                 System.out.println(spell.name);
         }
 
-        System.out.println("xxxxxxxxxxxxxxxxxx    Print just spells using streams  xxxxxxxx");
+        System.out.println("xxxxxxxxxxxxxxxxxx    Print just spells using streams (sequential)  xxxxxxxx");
         // Print just spells using streams filter method
         spells.stream()
                 .filter(s -> s.type == Spell.SpellType.SPELL)
+                .forEach(s -> System.out.println(s));
+
+
+        System.out.println("xxxxxxxxxxxxxxxxxx    Print all spells using a parallel stream xxxxxxxx");
+        // print all spells using a parallel stream: printed in different order
+        spells.parallelStream()
                 .forEach(s -> System.out.println(s));
     }
 
