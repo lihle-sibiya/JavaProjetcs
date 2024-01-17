@@ -19,6 +19,11 @@ public class Spell {
                 "Stops all current spells."));
         spells.add(new Spell("Locomotor Mortis", Spell.SpellType.CURSE,
                 "Locks an opponent's legs."));
+
+        //list the name of each spell on the console
+        for (Spell spell : spells)
+        System.out.println(spell.name);
+
     }
 
     public String name;
