@@ -33,12 +33,7 @@ public class Officers {
                 .println("Add: specifiy the index                                        Add: specifiy the index    ");
 
         // Add: specifiy the index
-        officers.add("Blake");
-        officers.add("Burns");
-        officers.add("Houlihan");
-        officers.add("Pierce");
-        officers.add("McIntyre");
-        officers.add(2, "Tuttle");
+               officers.add(2, "Tuttle");
         for (String s : officers)
             System.out.println(s);
 
@@ -46,12 +41,7 @@ public class Officers {
 
         // Updating LinkedList Items
         // add the original officers
-        officers.add("Blake");
-        officers.add("Burns");
-        officers.add("Tuttle");
-        officers.add("Houlihan");
-        officers.add("Pierce");
-        officers.add("McIntyre");
+       
         System.out.println(officers);
         // replace Tuttle with Murdock
         officers.set(2, "Murdock");
@@ -64,7 +54,7 @@ public class Officers {
         officers.remove(3);
         System.out.println(officers);
         // reference to the item
-        officers.remove("Houlihan");
+        officers.remove("Blake");
         System.out.println(officers);
 
     }
